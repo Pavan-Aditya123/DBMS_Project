@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper,
+.content {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.content {
+  overflow-x: hidden;
+}
+
+.content .section {
+  width: 100%;
+  height: 100vh;
+}
+
+.content .section.hero {
+  background-image: url(https://images.unsplash.com/photo-1589848315097-ba7b903cc1cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  perspective: 500px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  transition: background-image 0.5s ease; /* For smooth transition */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #191c29;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.2s ease; /* Faster fade-in effect */
+  z-index: 3; /* Ensure text is on top */
+}
+
+.text-overlay.show {
+  opacity: 1;
+}
+
+/* Scroll lock class */
+.scroll-lock {
+  overflow: hidden;
+}
+.text-overlay2 {
+  position: fixed; /* Keep the element fixed at the bottom of the screen */
+  bottom: 0vh; /* Align it to the bottom */
+  left: 0; /* Align it to the left edge */
+  width: 100%; /* Full width of the screen */
+  background: url("https://thecolourmoon.com/assets/images/movie-ticket-booking.png") no-repeat bottom center;
+  background-size: cover; /* Cover the entire div */
+  text-align: center;
+  color: aliceblue;
+  padding: 20vh 0; /* Adjust padding for proper spacing */
+  z-index: 10; /* Ensure it is on top of other elements */
+}
+
+.section.gradient-blue h1 {
+  color: aliceblue; /* Text color */ 
+  margin-top:15vh;
+  margin-left:25vw;
+  padding: 0; /* Remove default padding if needed */
+  font-size: xx-large;
+}
+
+.section.gradient-blue button {
+  margin-top: 1rem; /* Space above the button */
+  background-color: #007bff; /* Button color */
+  border: none; /* Remove border */
+  color: white; /* Text color */
+  padding: 0.5rem 1rem; /* Button padding */
+  font-size: 1rem; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  margin-top:5vh;
+  margin-left:46vw;
+}
+
+.section.gradient-blue button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+
+.section.gradient-blue {
+  background-color: #191c29; /* Dark navy blue background color */
+  border:none;
+}
+.section.gradient-blue {
+  background-color: #191c29; /* Existing gradient background */
+  position: relative; /* Position relative for positioning child elements */
+  overflow: hidden; /* Ensure nothing overflows */
+}
+
+.section.gradient-blue::before,
+.section.gradient-blue::after {
+  content: "";
+  position: absolute;
+  width: 20vw; /* Width of the image */
+  height: 30vh; /* Height of the image */
+  background: url('https://cdn-icons-png.flaticon.com/512/7626/7626666.png') no-repeat center center;
+  background-size: contain; /* Ensure the image is contained within the element */
+}
+
+.section.gradient-blue::before {
+  left: 6%; /* Position the image on the left */
+  top: 30%; /* Center it vertically */
+  transform: translateY(-50%); /* Adjust vertical centering */
+}
+
+.section.gradient-blue::after {
+  right: 6%; /* Position the image on the right */
+  top: 30%; /* Center it vertically */
+  transform: translateY(-50%) scaleX(-1); /* Adjust vertical centering and mirror horizontally */
+}
+
+
