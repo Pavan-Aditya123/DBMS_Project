@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="signup-styles.css"> -->
+</head>
+<body>
+    <div class="container-login">
+        <div class="curved-shape"></div>
+        <div class="curved-shape2"></div>
+
+        <!-- Info Content -->
+        <div class="info-content Register">
+            <h2 class="animation" style="--li:17; --S:0">WELCOME!</h2>
+            <p class="animation" style="--li:18; --S:1">We’re delighted to have you here. If you need any assistance, feel free to reach out.</p>
+        </div>
+
+        <!-- Login Form (Hidden) -->
+        <div class="form-box Login">
+            <h2 class="animation" style="margin-bottom : -3.5vh;" style="--D:0; --S:21">Sign Up</h2>
+            <form action="#">
+                <div class="input-box animation" style="--D:1; --S:22">
+                    <input type="text" required>
+                    <label for="">Name </label>
+                    <box-icon type='solid' name='user'></box-icon>
+                </div>
+
+                <div class="input-box animation" style="--D:2; --S:23">
+                    <input type="email" required>
+                    <label for="">Email</label>
+                    <box-icon type='solid' name='envelope'></box-icon>
+                </div>
+
+                <div class="input-box animation" style="--D:3; --S:24">
+                    <input type="password" required>
+                    <label for="">Create New Password</label>
+                    <box-icon name='lock-alt' type='solid'></box-icon>
+                </div>
+
+                <div class="input-box animation" style="--D:4; --S:25">
+                    <input type="password" required>
+                    <label for="">Confirm Password</label>
+                    <box-icon name='lock-alt' type='solid'></box-icon>
+                </div>
+
+                <div class="input-box animation" style="--D:5; --S:26">
+                    <a href="http://127.0.0.1:3000/cards/project.html"><button class="btn" type="submit">Sign Up</button></a>
+                </div>
+
+                <div class="regi-link animation" style="--D:6; --S:27">
+                    <p>Already have an account? <br> <a href="http://127.0.0.1:3000/Login/login_index.html" class="SignInLink">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Login Info Content (Hidden) -->
+        <div class="info-content Login">
+            <h2 class="animation" style="--D:0; --S:20">WELCOME BACK!</h2>
+            <p class="animation" style="--D:1; --S:21">Discover Your Next Blockbuster - Stream, Watch, and Enjoy the Best in Cinema!</p>
+        </div>
+    </div>
+
+    <script src="signup-script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Tickets Checkout</title>
+    <link rel="stylesheet" href="checkoout.css">
+    <script src="checkout.js"></script>
+</head>
+<body>
+    <div class="checkout-container">
+        <header>
+            <h1>Movie Tickets Checkout</h1>
+        </header>
+
+        <div class="movie-details">
+            <h2>Movie Details</h2>
+            <div class="movie-info">
+                <img src="movie-poster.jpg" alt="Movie Poster" class="movie-poster">
+                <div class="movie-description">
+                    <h3>Movie Title</h3>
+                    <p>Genre: Action, Adventure</p>
+                    <p>Duration: 120 mins</p>
+                    <p>Description: A thrilling action-packed movie...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment-info">
+            <h2>Payment Information</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Name on Card</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+
+                <button type="submit" class="btn">Complete Purchase</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Movie Tickets</p>
+        </footer>
+    </div>
+</body>
+</html>

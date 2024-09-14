@@ -1,0 +1,194 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #66c2ff, #2980b9);
+}
+
+.tickets {
+    width: 550px;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 16px;
+    background: white;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.ticket-selector {
+    background: rgb(243, 243, 243);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Status Section */
+.status {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.status .item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.status .item i {
+    font-size: 16px; /* Size of the seat icon */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.fas.fa-couch {
+    font-size: 24px;
+}
+
+.fas.fa-couch.available {
+    color: rgb(215, 213, 213); /* Default available color */
+}
+
+.fas.fa-couch.booked {
+    color: rgb(180, 180, 180); /* Color for booked seats */
+}
+
+.fas.fa-couch.selected {
+    color: rgb(3, 138, 248); /* Color for selected seats */
+}
+
+.all-seats {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 15px;
+    margin: 60px 0;
+    margin-top: 20px;
+    position: relative;
+}
+
+.fas.fa-couch {
+    font-size: 24px; /* Size of the seat icon */
+    cursor: pointer;
+    color: rgb(233, 233, 233); /* Default available color */
+}
+
+.fas.fa-couch.booked {
+    color: rgb(180, 180, 180); /* Color for booked seats */
+}
+
+.fas.fa-couch.selected {
+    color: rgb(47, 163, 255); /* Color for selected seats */
+}
+
+.screentext {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.timings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.dates {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dates-item {
+    width: 50px;
+    height: 50px;
+    background: rgb(233, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.day {
+    font-size: 12px;
+}
+
+.times {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.time {
+    font-size: 14px;
+    width: fit-content;
+    padding: 7px 14px;
+    background: rgb(233, 233, 233);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.timings input:checked+label {
+    background: #47a3ff;
+    color: white;
+}
+
+.price {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.total div {
+    display: flex;
+    gap: 4px;
+}
+
+.total span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.price button {
+    background: rgb(60, 60, 60);
+    color: white;
+    font-size: 14px;
+    padding: 7px 14px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
