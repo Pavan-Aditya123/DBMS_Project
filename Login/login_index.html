@@ -5,33 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Signup Form</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     <div class="container-login">
         <div class="curved-shape"></div>
         <div class="curved-shape2"></div>
+        
         <div class="form-box Login">
             <h2 class="animation" style="--D:0; --S:21">Login</h2>
-            <form action="#">
+            <form action="#" id="login-form">  <!-- Added id for the login form -->
                 <div class="input-box animation" style="--D:1; --S:22">
-                    <input type="text" required>
-                    <label for="">Username</label>
+                    <input type="email" required>  <!-- Changed to email type -->
+                    <label for="">Email</label>     <!-- Changed label to Email -->
                     <box-icon type='solid' name='user'></box-icon>
                 </div>
 
                 <div class="input-box animation" style="--D:2; --S:23">
                     <input type="password" required>
                     <label for="">Password</label>
-                    <box-icon name='lock-alt' type='solid' ></box-icon>
+                    <box-icon name='lock-alt' type='solid'></box-icon>
                 </div>
 
                 <div class="input-box animation" style="--D:3; --S:24">
-                    <a href="http://127.0.0.1:3000/seat2/project.html"><button class="btn" type="submit">Login</button></a>
+                    <button class="btn" type="submit">Login</button> <!-- Removed <a> tag -->
                 </div>
 
                 <div class="regi-link animation" style="--D:4; --S:25">
-                    <p>Don't have an account? <br> <a href="http://127.0.0.1:3000/Login/signUp.html" target ="_blank"class="SignUpLink">Sign Up</a></p>
+                    <p>Don't have an account? <br> <a href="http://127.0.0.1:3000/Login/signUp.html" target="_blank" class="SignUpLink">Sign Up</a></p>
                 </div>
             </form>
         </div>
@@ -43,7 +43,7 @@
 
         <div class="form-box Register">
             <h2 class="animation" style="--li:17; --S:0">Register</h2>
-            <form action="#">
+            <form action="#" onsubmit="downloadUserDetails(); return false;"> <!-- Call download function -->
                 <div class="input-box animation" style="--li:18; --S:1">
                     <input type="text" required>
                     <label for="">Username</label>
@@ -53,13 +53,13 @@
                 <div class="input-box animation" style="--li:19; --S:2">
                     <input type="email" required>
                     <label for="">Email</label>
-                    <box-icon name='envelope' type='solid' ></box-icon>
+                    <box-icon name='envelope' type='solid'></box-icon>
                 </div>
 
                 <div class="input-box animation" style="--li:19; --S:3">
                     <input type="password" required>
                     <label for="">Password</label>
-                    <box-icon name='lock-alt' type='solid' ></box-icon>
+                    <box-icon name='lock-alt' type='solid'></box-icon>
                 </div>
 
                 <div class="input-box animation" style="--li:20; --S:4">
@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="regi-link animation" style="--li:21; --S:5">
-                    <p>Don't have an account? <br> <a href="http://127.0.0.1:3000/Login/login_index.html#" class="SignInLink">Sign In</a></p>
+                    <p>Already have an account? <br> <a href="http://127.0.0.1:3000/Login/login_index.html#" class="SignInLink">Sign In</a></p>
                 </div>
             </form>
         </div>
@@ -79,7 +79,7 @@
 
     </div>
 
-    <script src="index.js"></script>
+    <script src="script.js"></script>  <!-- Updated to point to the correct JS file -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 </body>
